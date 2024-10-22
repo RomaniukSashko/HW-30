@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: bisque;
+    border: 1px darkblue dashed;
+}
+
+.box {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    animation-name: animate;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(0);
+        background-color: red;
+    }
+
+    25% {
+        transform: translate(0, 400px);
+        background-color: blue;
+    }
+
+    50% {
+        transform: translate(400px, 400px);
+        background-color: green;
+    }
+
+    75% {
+        transform: translate(400px, 0);
+        background-color: yellow;
+    }
+
+    100% {
+        transform: translate(0);
+        background-color: red;
+    }
+}
